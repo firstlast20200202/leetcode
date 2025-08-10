@@ -1,6 +1,6 @@
-todo:
+todo: 12 Aug
 
-12 Aug: dynamic 01 bag; 
+dynamic 01 bag; 
 
 angular tutorial; 
 
