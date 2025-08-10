@@ -1,0 +1,26 @@
+class Solution {
+public:
+    int evalRPN(vector<string>& tokens) {
+        stack<long long> st;
+        for(int i = 0; i < tokens.size(); i++) {
+            //that's why st looks empty here because it doenst get into this condition first
+            if(tokens[i] == "+" || tokens[i] == "-" || tokens[i] == "*" || tokens[i] == "/") {
+                int num1 = st.top();
+                st.pop();
+                int num2 = st.top();
+                st.pop();
+                if(tokens[i] == "+") st.push(num2 + num1);
+                if(tokens[i] == "-") st.push(num2 - num1);
+                if(tokens[i] == "*") st.push(num2 * num1);
+                if(tokens[i] == "/") st.push(num2 / num1);
+            }
+            else {
+                //always get into this condition first, because it would never push a notation first
+                st.push(stoll(tokens[i]));  
+            }
+        }
+        long long res = st.top();
+        st.pop();
+        return res;
+    }
+};
