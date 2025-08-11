@@ -6,7 +6,7 @@ angular tutorial;
 
 postman tutorial
 
-By now Arrays done: shoould be able to finish 704, 27, 977, 209, 59, 58
+By now Arrays done: shoould be able to finish 704, 27, 977, 209, 59, 58, 44
 
 review dynamic programming 11 - 20 
 
