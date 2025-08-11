@@ -1,4 +1,6 @@
-todo: 12 Aug
+todo: 13 Aug
+
+27 write by myself
 
 dynamic 01 bag look again this afternoon and write
 
