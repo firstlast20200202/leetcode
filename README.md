@@ -2,7 +2,6 @@ todo:
 
 12 Aug
 
-dynamic 01 bag look again this afternoon and write
 
 angular tutorial; 
 
@@ -19,4 +18,6 @@ then review stack and queue
 13 Aug
 
 27, 977 write by myself
+
+dynamic 01 bag look again this afternoon and write
 
