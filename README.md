@@ -1,6 +1,6 @@
 todo: 12 Aug
 
-dynamic 01 bag; 
+dynamic 01 bag look again this afternoon and write
 
 angular tutorial; 
 
