@@ -17,7 +17,7 @@ then review stack and queue
 
 13 Aug
 
-27, 977 write by myself
+27 write by myself
 
 dynamic 01 bag look again this afternoon and write
 
