@@ -20,5 +20,5 @@ By now Arrays done: should be able to finish 59, 44
 
 started hash today: 242, 349, 202, 1, 454, 15, 18
 
-dynamic 01 bag look again this afternoon and write
+dynamic 01 bag look again this afternoon and write (if too hard to catch up every day, gotta re-do gitlab ones)
 
