@@ -19,7 +19,7 @@ then review stack and queue
 
 27 write by myself
 
-By now Arrays done: should be able to finish 209, 59, 44
+By now Arrays done: should be able to finish 59, 44
 
 dynamic 01 bag look again this afternoon and write
 
