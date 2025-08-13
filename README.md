@@ -14,6 +14,8 @@ then review stack and queue
 
 14 Aug
 
+write by myself tonight: 349, 01 bag tutorial karma
+
 By now Arrays done: should be able to finish 59, 44
 
 started hash today: 349, 202, 1, 454, 15, 18
