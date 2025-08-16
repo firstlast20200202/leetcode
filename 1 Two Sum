@@ -15,3 +15,27 @@ public:
         return res;
     }
 };
+
+
+
+//method 2
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+       vector<int> res;
+       int sum = 0;
+       int sub_start = 0;
+       for(int i = 0; i < nums.size(); i++) {
+            sum += nums[i];
+            res.push_back(i);
+            if(sum > target) {
+                res.erase(res.begin()+sub_start);
+                sub_start++;
+            }
+            if(sum == target) {
+                return res;
+            }
+       }
+       return res;
+    }
+};
