@@ -12,9 +12,9 @@ then review stack and queue
 
 
 
-15 Aug
+17 Aug
 
-1, 70, 509 in the morning
+70, 509 in the morning
 
 write by myself tonight: 01 bag tutorial karma
 
