@@ -14,7 +14,7 @@ then review stack and queue
 
 17 Aug
 
-70, 509 in the morning
+70 in the morning
 
 write by myself tonight: 01 bag tutorial karma
 
