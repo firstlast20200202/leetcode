@@ -1,7 +1,9 @@
 class Solution {
 public:
     int fib(int n) {
+        //dont forget this bit
         if(n <= 1) return n;
+        //if only initialise the dp like this 'vector<int> dp;' without specify the length, the default of vector would be null
         vector<int> dp(n+1);
         dp[0] = 0;
         dp[1] = 1;
