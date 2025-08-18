@@ -12,13 +12,13 @@ then review stack and queue
 
 
 
-17 Aug
+18 Aug
+
+hash today: 202, 1, 454 ask, 15, 18
 
 write by myself tonight: 01 bag tutorial karma
 
 By now Arrays done: should be able to finish 59, 44
-
-started hash today: 202, 1, 454, 15, 18
 
 dynamic 01 bag look again this afternoon and write (if too hard to catch up every day, gotta re-do gitlab ones)
 
