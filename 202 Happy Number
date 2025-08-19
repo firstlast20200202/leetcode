@@ -1,0 +1,27 @@
+class Solution {
+public:
+    int calculate(int n) {
+        int sum = 0;
+        while(n > 0) {
+            sum += (n%10) * (n%10);
+            n /= 10;
+        }
+        return sum;
+    }
+    bool isHappy(int n) {
+        unordered_set<int> tmp;
+        while(1) {
+            int sum = calculate(n);
+            if(sum == 1) return true;
+            if(tmp.find(sum) != tmp.end()) {
+                return false;
+            }
+            else {
+                tmp.insert(sum);
+            }
+            //when n == 19, sum ended up at 82 in calculate function, then in isHappy function, it's inserted into the tmp set, then sum replaces the original n here which is what this statement is doing. 
+            //so the calculate function only does the first calculation rather than to the end to get 1 before getting into the while loop in isHappy function. because replacing the last 'n' is implemented in isHappy.
+            n = sum;    
+        }
+    }
+};
