@@ -14,7 +14,7 @@ then review stack and queue
 
 18 Aug
 
-hash today: 202, 1, 454 ask, 15, 18
+hash today: 454 ask, 15, 18
 
 write by myself tonight: 01 bag tutorial karma
 
