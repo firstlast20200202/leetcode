@@ -1,0 +1,50 @@
+//Edited the original answer in this way: in class MyQueue, re-named the deque to 'dq', 'dq' has built-in functions since it's a deque
+//the built-in functions that 'dq' can use include: push_front(), push_back(), pop_front(), pop_back(), front(), back(), empty(), size()
+
+//in main function, re-named the object of MyQueue to 'mq', 'mq' doesnt have built-in functions, it can only use the ones implemented in class MyQueue
+//like popElement(int value), pushElement(int value), int frontElement()
+
+//in main function, the built-in functions of vector 'res' include: push_back(element), pop_back()
+
+
+//what functions should be put in each self-defined function in the self-defined class? 
+//the self-defined functions in the self-defined class should implement the functions in every loop, aka only one step of the loop
+//in this way, it can be called in every loop in the main function, and leave the main function to build the loop struction (conditions/stop sign etc.)
+
+class Solution {
+private:
+    class MyQueue {
+        //if remove this 'public' here, the functions will be private members to this class, which can't be used in the main function         
+        public:     
+        deque<int> dq;
+        void popElement(int value) {
+            if(!dq.empty() && value == dq.front()) {
+                dq.pop_front();
+            }
+        }
+        void pushElement(int value) {
+            while(!dq.empty() && value > dq.back()) {
+                dq.pop_back();
+            }
+            dq.push_back(value);
+        }
+        int frontElement() {
+            return dq.front();
+        }
+    };
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        MyQueue mq;
+        vector<int> res;
+        for(int i = 0; i < k; i++) {
+            mq.pushElement(nums[i]);
+        }
+        res.push_back(mq.frontElement());
+        for(int i = k; i < nums.size(); i++) {
+            mq.popElement(nums[i-k]);
+            mq.pushElement(nums[i]);
+            res.push_back(mq.frontElement());
+        }
+        return res;
+    }
+};
