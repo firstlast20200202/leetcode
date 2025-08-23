@@ -12,7 +12,9 @@ then review stack and queue
 
 
 
-21 Aug: 62, 63, 42
+23 Aug: 42, 239
+
+62, 63
 
 Hash: 383, 15, 18
 
