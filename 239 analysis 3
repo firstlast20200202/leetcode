@@ -1,0 +1,22 @@
+In pop function the reason that every time it compares the first element of the queue to the first element of the k window, 
+is because MOST LIKELY the first element in the queue (which is the biggest element as well) is originally from the first element in k window,
+in every loop we need to move the k window which means we need to get rid of the (I-K)th element, and push the Ith in,
+that's why keeping the first element in the queue doesnt make sense.
+if the Ith is the same value as the one we just got rid of, which would be the biggest in the queue,
+it will get to the first position in the queue by going through the push function.
+
+
+Knowledge: queue and deque in c++
+queue: a container adapter that provides first in first out
+operations: push(), pop(), front(), back(), empty(), size()
+
+deque: a double ended queue which allows insertion and deletion at both ends
+operations: push_front(), push_back(), pop_front(), pop_back(), front(), back(), empty(), size()
+
+vector operations: 
+push_back(element)  add an element to the end of the vector
+pop_back()  //remove the last element
+
+
+One point i noticed is that in the original answer, the names of user defined-functions and variables are the same as queue built in functions/properties, 
+which is quite confusing for me at this stage. So i edited the names making them readable. How smart i am!
