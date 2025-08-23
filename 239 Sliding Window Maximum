@@ -29,8 +29,8 @@ public:  //this public is mandatory, otherwise it gets a compile error
         res.push_back(mq.frontElement());
         //start moving k window
         for(int i = k; i < nums.size(); i++) {
-            mq.popElement(nums[i-k]);
-            mq.pushElement(nums[i]);
+            mq.popElement(nums[i-k]);    //first element in every window 
+            mq.pushElement(nums[i]);    //the element after the window
             res.push_back(mq.frontElement());
         }
         return res;
