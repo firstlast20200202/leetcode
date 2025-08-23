@@ -12,7 +12,7 @@ then review stack and queue
 
 
 
-23 Aug: 42, 239
+24 Aug: 42, 239
 
 62, 63
 
