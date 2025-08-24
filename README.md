@@ -14,7 +14,7 @@ then review stack and queue
 
 24 Aug: 42, 239
 
-62, 63
+62, 63, 343
 
 Hash: 383, 15, 18
 
