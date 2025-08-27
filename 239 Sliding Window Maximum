@@ -3,6 +3,8 @@ private:
     class MyQueue {
     public:
         deque<int> dq;
+        //so in self-defined functions, it pretty much implements the functions in single steps; and in the main function, implement the loop 
+        //which calls the self-defined functions in very step based on the data structures etc.
         void popElement(int value) {
             if(!dq.empty() && value == dq.front()) {
                 dq.pop_front();
