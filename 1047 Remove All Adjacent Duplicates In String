@@ -1,0 +1,29 @@
+//general idea: push input string to a stack, then assign the stack to the output string, then reverse the output string
+
+class Solution {
+public:
+    string removeDuplicates(string s) {
+        stack<char> st;
+        for(int i = 0; i < s.size(); i++) {
+            if(st.empty() || st.top() != s[i]) 
+                st.push(s[i]);
+            else
+                st.pop();
+        }
+        string res = "";
+
+        //originally the while loop was implemented in the way as below (a for loop), but st is a stack, 
+        //in stack elements can't be accessed except the top one; to access to all the elements, vector can be used instead
+        //for(int i = 0; i < st.size(); i++) {
+        //    res += st[i];
+        //    st.pop();
+        //}
+
+        while(!st.empty()) {
+            res += st.top();
+            st.pop();
+        }
+        reverse(res.begin(), res.end());
+        return res;
+    }
+};
