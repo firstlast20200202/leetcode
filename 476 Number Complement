@@ -4,7 +4,7 @@ class Solution {
 public:
     int findComplement(int num) {
         int i = 0;
-        while(pow(2, i) <= num) {
+        while(pow(2, i) <= num) {    //the equal scenario is when i = 0 it will return 0 rather than -1
             i++;
         }
         return pow(2,i) - num - 1;
