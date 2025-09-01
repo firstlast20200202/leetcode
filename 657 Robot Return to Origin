@@ -13,7 +13,8 @@ public:
 };
 
 
-// originally my code is as below and got the wrong answer, then debug by adding the commented statement, got 'stdout -695205592', which means that gotta initialise all the arguments one by one in c++ rather than do a bunch at once
+// originally my code is as below and got the wrong answer, then debug by adding the commented statement, got 'stdout -695205592', 
+//which means that gotta initialise all the arguments one by one in c++ rather than do a bunch at once
 class Solution {
 public:
     bool judgeCircle(string moves) {
