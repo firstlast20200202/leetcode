@@ -12,7 +12,10 @@ then review stack and queue
 
 
 
-30 Aug morning: 728 867 
+2 Sep morning: 832
+
+
+728 867 
 1047
 
 62, 63, 343, 2
