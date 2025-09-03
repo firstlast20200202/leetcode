@@ -14,7 +14,8 @@ public:
                 //an alternative way
                 // res[i][j] = (res[i][j]+1) % 2;
                 if(res[i][j] == 1) res[i][j] = 0;
-                else if(res[i][j] == 0) res[i][j] = 1;
+                //originally there's no 'else', which makes all the res[i][j] go through this 'if', even though after going through the previous 'if' already, since last 'if' makes all values to 0.
+                else if(res[i][j] == 0) res[i][j] = 1;    
             }
         }
         
