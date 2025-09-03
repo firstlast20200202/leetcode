@@ -20,9 +20,5 @@ write by myself: 728, 1047, 01 bag tutorial karma
 
 Hash: 383, 15, 18
 
-
-
 Arrays: 59, 44
-
-dynamic 01 bag look again this afternoon and write (if too hard to catch up every day, gotta re-do gitlab ones)
 
