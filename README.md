@@ -14,8 +14,6 @@ then review stack and queue
 
 4 Sep: 
 
-
-728 
 1047
 
 62, 63, 343, 2
