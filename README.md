@@ -14,13 +14,13 @@ then review stack and queue
 
 4 Sep: 
 
-1047
+write by myself: 728, 1047, 01 bag tutorial karma
 
 62, 63, 343, 2
 
 Hash: 383, 15, 18
 
-write by myself tonight: 01 bag tutorial karma
+
 
 Arrays: 59, 44
 
