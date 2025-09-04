@@ -14,7 +14,7 @@ then review stack and queue
 
 4 Sep: 
 
-write by myself: 728, 1047, 01 bag tutorial karma
+write by myself: 728, 01 bag tutorial karma
 
 62, 63, 343, 2
 
