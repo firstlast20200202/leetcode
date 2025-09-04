@@ -27,3 +27,22 @@ public:
         return res;
     }
 };
+
+
+//method 2
+class Solution {
+public:
+    string removeDuplicates(string s) {
+        string res;
+        deque<char> tmp;
+        for(int i = 0; i < s.size(); i++) {
+            if(tmp.front() == s[i]) tmp.pop_front();
+            else tmp.push_front(s[i]);
+        }
+        while(!tmp.empty()) {
+            res += tmp.back();
+            tmp.pop_back();
+        }
+        return res;
+    }
+};
