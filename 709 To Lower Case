@@ -9,3 +9,12 @@ public:
         return s;
     }
 };
+
+
+
+//java solution: midijiuzaimimianli2333
+class Solution {
+    public String toLowerCase(String s) {
+        return s.toLowerCase();
+    }
+}
