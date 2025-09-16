@@ -14,6 +14,7 @@ public:
             j = starty;
             //in these 4 for loops assign values to each row and column, from the first position to the second last position, 
             //and leave the last position to the next for loop, so makes it like [left, right)
+            //notice that after every loop, execute i++ and j++ (or i-- and j--), which would be the start value of the next for loop
             for (j; j < n - offset; j++) {
                 res[i][j] = count++;
             }
