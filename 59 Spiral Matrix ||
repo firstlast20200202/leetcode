@@ -2,15 +2,18 @@ class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
         vector<vector<int>> res(n, vector<int>(n, 0)); 
-        int startx = 0, starty = 0; 
-        int loop = n / 2; 
-        int mid = n / 2; 
-        int count = 1; 
-        int offset = 1; 
+        int startx = 0, starty = 0;     //the start x and y indexes of each circle, eg. res[0][0], res[1][1], res[2][2], etc.
+        int loop = n / 2;               //how many circles(aka while loops) are needed
+        int mid = n / 2;                //the middle position of the matrix res[mid][mid] if n is odd
+        int count = 1;                  //the values of each position of the matrix
+        int offset = 1;                 //increase 1 in each while loop, to shorten 1 index at the end of the loop, since in each while loop it
+                                        //while loop it should shorten 2, do 'startx++' and 'starty++' to shorten 1 index at the start of the loop
         int i,j;
         while (loop --) {
             i = startx;
             j = starty;
+            //in these 4 for loops assign values to each row and column, from the first position to the second last position, 
+            //and leave the last position to the next for loop, so makes it like [left, right)
             for (j; j < n - offset; j++) {
                 res[i][j] = count++;
             }
@@ -23,9 +26,9 @@ public:
             for (; i > startx; i--) {
                 res[i][j] = count++;
             }
-            startx++;
-            starty++;
-            offset += 1;
+            startx++;                   //shorten 1 index at the start of the while loop
+            starty++;                   //shorten 1 index at the start of the while loop
+            offset += 1;                //shorten 1 index at the end of the first two for loops
         }
         if (n % 2) {
             res[mid][mid] = count;
