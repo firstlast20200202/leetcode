@@ -1,0 +1,16 @@
+class Solution {
+public:
+    bool isMatch(string s, string p) {
+        deque<char> tmp;
+        for(int i = 0; i < s.size(); i++) {
+            tmp.push_back(s[i]);
+        }
+        for(int i = 0; i < s.size(); i++) {
+            if(p[i] == '*') return true;
+            else if(p[i] == '?') {
+                tmp.pop_front();
+            }
+        }
+        return tmp.empty();
+    }
+};
