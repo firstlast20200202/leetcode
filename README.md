@@ -1,6 +1,6 @@
 17 Sep: 
 
-write by myself: 728
+write by myself:
 
 62, 63, 343, 2
 
