@@ -1,3 +1,17 @@
+17 Sep: 
+
+write by myself: 728
+
+62, 63, 343, 2
+
+Hash: 383, 15, 18
+
+Arrays: 59, 44
+
+
+
+
+
 12 Aug
 
 angular tutorial; 
@@ -10,13 +24,5 @@ then review stack and queue
 
 
 
-17 Sep: 
 
-write by myself: 728
-
-62, 63, 343, 2
-
-Hash: 383, 15, 18
-
-Arrays: 59, 44
 
