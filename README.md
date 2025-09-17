@@ -6,7 +6,7 @@ write by myself:
 
 Hash: 383, 15, 18
 
-Arrays: 59, 44
+Arrays: 44
 
 
 
