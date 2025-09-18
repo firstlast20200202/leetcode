@@ -1,0 +1,22 @@
+//https://kamacoder.com/problempage.php?pid=1070
+#include<iostream>
+#include<vector>
+using namespace std;
+int main() {
+    int n, a, b;
+    cin >> n;
+    vector<int> vec(n);
+    vector<int> p(n);
+    int tmp = 0;
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &vec[i]);
+        tmp += vec[i];
+        p[i] = tmp;
+    }
+    while(~scanf("%d%d", &a, &b)) {
+        int sum;
+        if(a == 0) sum = p[b];
+        else sum = p[b] - p[a-1];
+        printf("%d\n", sum);
+    }
+}
