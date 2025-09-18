@@ -1,4 +1,8 @@
-17 Sep: 
+19 Sep: 
+
+ASK: Arrays 44
+
+
 
 write by myself:
 
@@ -6,7 +10,7 @@ write by myself:
 
 Hash: 383, 15, 18
 
-Arrays: 44
+
 
 
 
