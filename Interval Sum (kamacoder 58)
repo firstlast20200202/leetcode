@@ -13,8 +13,8 @@ int main() {
         tmp += vec[i];
         p[i] = tmp;
     }
+    int sum = 0;
     while(~scanf("%d%d", &a, &b)) {
-        int sum;
         if(a == 0) sum = p[b];
         else sum = p[b] - p[a-1];
         printf("%d\n", sum);
