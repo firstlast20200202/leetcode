@@ -1,6 +1,6 @@
-19 Sep: 
+20 Sep: 
 
-ASK: Arrays 44
+write by myself: Arrays 44
 
 
 
