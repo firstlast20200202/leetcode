@@ -1,0 +1,41 @@
+//https://kamacoder.com/problempage.php?pid=1044
+#include<iostream>
+#include<vector>
+#include<climits>
+using namespace std;
+int main() {
+    int n, m;
+    cin >> n >> m;
+    int sum = 0;
+    vector<vector<int>> vec(n, vector<int>(m, 0));
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < m; j++) {
+            cin >> vec[i][j];
+            sum += vec[i][j];
+        }
+    }
+    vector<int> horizontal(n, 0);
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < m; j++) {
+            horizontal[i] += vec[i][j];
+        }
+    }
+    vector<int> vertical(n, 0);
+    for(int j = 0; j < m; j++) {
+        for(int i = 0; i < n; i++) {
+            vertical[j] += vec[i][j];
+        }
+    }
+    int res = INT_MAX;
+    int horizontalCut = 0;
+    for(int i = 0; i < n; i++) {
+        horizontalCut += horizontal[i];
+        res = min(res, abs(sum-horizontalCut-horizontalCut));    //sum-horizontalCut is the total value of rest rows, -horizontalCut again is the different of these two areas
+    }
+    int verticalCut = 0;
+    for(int j = 0; j < m; j++) {
+        verticalCut += vertical[j];
+        res = min(res, abs(sum-verticalCut-verticalCut));
+    }
+    cout << res << endl;
+}
