@@ -1,6 +1,8 @@
 20 Sep: 
 
-write by myself: Arrays 44
+write by myself: 
+Arrays 44 
+Hash 383
 
 
 
@@ -8,7 +10,7 @@ write by myself:
 
 62, 63, 343, 2
 
-Hash: 383, 15, 18
+Hash: 15, 18
 
 
 
