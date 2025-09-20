@@ -1,7 +1,8 @@
 20 Sep: 
 
 write by myself: 
-Hash 383
+383
+739
 
 
 
