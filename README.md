@@ -1,7 +1,6 @@
 20 Sep: 
 
 write by myself: 
-Arrays 44 
 Hash 383
 
 
