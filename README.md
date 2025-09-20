@@ -1,8 +1,6 @@
-20 Sep: 
+22 Sep: 
 
-write by myself: 
-383
-739
+739 optimised version
 496
 
 
