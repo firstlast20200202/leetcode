@@ -1,8 +1,3 @@
-22 Sep: 
-496
-
-
-
 write by myself:
 
 62, 63, 343, 2
