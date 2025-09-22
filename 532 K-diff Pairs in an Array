@@ -3,7 +3,7 @@ public:
     int findPairs(vector<int>& nums, int k) {
         int res = 0;
         unordered_map<int, int> umap;
-        umap[i] is the times each element in nums appears
+        //umap[i] is the times each element in nums appears
         for(int i : nums) {
             umap[i]++;        
         }
