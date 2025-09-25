@@ -18,7 +18,7 @@ public:
                     //IF
                     if(umap.count(nums2[st.top()]) > 0) {    //same as if(umap.find(nums2[st.top()]) != umap.end()) 
                         int index = umap[nums2[st.top()]];  
-                        res[index] = nums2[j];     assign the value to res vector, this value is the bigger value after nums2[st.top()] 
+                        res[index] = nums2[j];     //assign the value to res vector, this value is the bigger value after nums2[st.top()] 
                     }
                     st.pop();
                 }
