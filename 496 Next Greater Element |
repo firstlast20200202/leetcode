@@ -16,7 +16,7 @@ public:
                 //WHILE
                 while(!st.empty() && nums2[j] > nums2[st.top()]) {
                     //IF
-                    if(umap.count(nums2[st.top()]) > 0) {
+                    if(umap.count(nums2[st.top()]) > 0) {    //same as if(umap.find(nums2[st.top()]) != umap.end()) 
                         int index = umap[nums2[st.top()]];  
                         res[index] = nums2[j]; 
                     }
