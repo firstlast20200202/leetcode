@@ -1,0 +1,12 @@
+class Solution {
+public:
+    vector<int> numberOfLines(vector<int>& widths, string s) {
+        int res = 1, sum = 0;
+        for (char c : s) {
+            int x = widths[c - 'a'];
+            res = sum + x > 100 ? res + 1 : res;
+            sum = sum + x > 100 ? x : sum + x;
+        }
+        return {res, sum};
+    }
+};
