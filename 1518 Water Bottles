@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int numWaterBottles(int numBottles, int numExchange) {
+        int drinked = 0;
+        int empty = 0; 
+        
+        while (numBottles > 0) {
+            drinked += numBottles;   // drink all current bottles
+            empty += numBottles;        // get empty bottles
+            
+            numBottles = empty / numExchange; // exchange empties for new bottles
+            empty = empty % numExchange;         // leftover empties
+        }
+        return drinked;
+    }
+};
+
+//in this method, via changing numBottles in every loop, get the numBottles as the full water bottles; then in the loop, calculate the drinked number by adding numBottles, then
+//calculate drinkable bottles, as well as empty bottles.
+
