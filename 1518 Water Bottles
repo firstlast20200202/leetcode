@@ -1,3 +1,6 @@
+//in this method, via changing numBottles in every loop, get the numBottles as the full water bottles; then in the loop, calculate the drinked number by adding numBottles, then
+//calculate drinkable bottles, as well as empty bottles.
+
 class Solution {
 public:
     int numWaterBottles(int numBottles, int numExchange) {
@@ -14,7 +17,3 @@ public:
         return drinked;
     }
 };
-
-//in this method, via changing numBottles in every loop, get the numBottles as the full water bottles; then in the loop, calculate the drinked number by adding numBottles, then
-//calculate drinkable bottles, as well as empty bottles.
-
