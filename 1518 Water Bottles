@@ -11,7 +11,7 @@ public:
             drinked += numBottles;   // drink all current bottles
             empty += numBottles;        // get empty bottles
             
-            numBottles = empty / numExchange; // exchange empties for new bottles
+            numBottles = empty / numExchange; // exchange empties for new bottles, to get full bottles, as long as there's full bottles, the loop will keep going
             empty = empty % numExchange;         // leftover empties
         }
         return drinked;
