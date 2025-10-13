@@ -2,7 +2,7 @@
 
 1518
 
-weekly email
+weekly email leetcode
 
 739, 806, 344, 541, 151
 
