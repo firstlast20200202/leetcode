@@ -14,8 +14,6 @@ Hash: 15, 18
 
 
 
-
-
 12 Aug
 
 angular tutorial; 
