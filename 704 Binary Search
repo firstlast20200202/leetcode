@@ -1,5 +1,5 @@
 //this method is based on mid is in [l, r], the condition of while loops has to be l<=r rather than l<r, say, nums = [1,2,3,4,5], target = 2, if l<r, after two loops, l == 1, r == 1...
-//can't get in the third loop, which is when nums[mid] == 1 and mid will be returned.
+//can't get in the third loop, which is when nums[mid] == 1 and mid will be returned. so if it doesnt consider the scenario of l == r, it would miss the scenario when l == r == mid (which will be returned)
 
 class Solution {
 public:
