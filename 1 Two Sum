@@ -13,7 +13,9 @@ public:
             //the process of building the map is: basically the keys of map are the indexes of the vector nums, then you add the value of each pair
             //building the map can't be the first section of every loop, because when the test case is [3, 3], in the first loop you get [0, 3]
             //in the second loop you get {[1, 3], [1, 3]}, which overrides the first pair before testing wnether the element is in the map already (by executing 'if')
-            map[nums[i]] = i;
+            //map[nums[i]] = i;
+            //aka for the case that has two same values, you need two different indexes to output, but if you build the map before first loop, you'll get this value's index as res[0]
+            //and res[1] both, but actually you should need another index as res[1].
         }
         return res;
     }
