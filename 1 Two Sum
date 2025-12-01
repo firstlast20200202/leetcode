@@ -8,7 +8,7 @@ public:
             if(map.find(tmp) != map.end()) {
                 res[0] = i;
                 res[1] = map[tmp];
-                break;    //dont execute the current and following loops as well
+                break;    //dont execute the current and following loops 
             }
             //the process of building the map is: basically the keys of map are the indexes of the vector nums, then you add the value of each pair
             //building the map can't be the first section of every loop, because when the test case is [3, 3], in the first loop you get [0, 3]
