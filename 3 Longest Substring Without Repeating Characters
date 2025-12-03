@@ -8,6 +8,7 @@ public:
             if(m.find(s[i]) != m.end()) {
                 //res = max(res, count);
                 count = max(m[s[i]],count);    //count is the index when the same character appeared last time
+                //count = m[s[i]];    //this calculation doesnt think of the scenario that there's another repeated character
             }
             //else count++;
             //m[s[i]] = i;
