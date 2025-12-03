@@ -18,4 +18,5 @@ public:
     }
 };
 
-//count only gets calculated when a char appears not the first time, but when count would be greater than m[s[i]]???
+//count only gets calculated when a char appears not the first time, but when count would be greater than m[s[i]]? originally i was thinking that count should be calculated in this way:
+//count = m[s[i]]; but what if there's another character repeatedly appears as well? in this case, count would be calculated for another character, that's why we need to get the max value.
