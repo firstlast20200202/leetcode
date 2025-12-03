@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int res = 0;
+        int count = 0;
+        unordered_map<char, int> m;
+        for(int i = 0; i < s.size(); i++) {
+            if(m.find(s[i]) != m.end()) {
+                //res = max(res, count);
+                count = max(m[s[i]],count);    //count is the index when the same character appeared last time
+            }
+            //else count++;
+            //m[s[i]] = i;
+            m[s[i]] = i+1;
+            res = max(i-count+1, res);    //i-count+1 is the distance of the same character appears, aka the difference of indexes of two time it appears; res gets the biggest distance
+        }
+        return res;
+    }
+};
+
+//count only gets calculated when a char appears not the first time, but when count would be greater than m[s[i]]???
