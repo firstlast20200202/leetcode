@@ -1,6 +1,6 @@
 509 write by myself
 
-look: 10
+ask: 10
 
 look: 4
 
