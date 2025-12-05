@@ -9,7 +9,7 @@ public:
                 start = i-(len-1)/2;
             }
         }
-        return s.substr(start,len);
+        return s.substr(start,len);    //in substr function, len is the length of the substring, it is not the index of the last character
     }
 
     int getsub(int i,int j,string s){
