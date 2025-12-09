@@ -54,4 +54,4 @@ public:
 };
 
 
-//generally assign res to head or vice versa, then keep moving one of them in the process for building the list, then return the other one, because they point to the same first node, so they are exactly the same lists.
+//To deal with linked list problems, generally assign res to head or vice versa, then keep moving one of them in the process for building the list, then return the other one, because they point to the same first node, so they are exactly the same lists.
