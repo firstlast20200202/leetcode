@@ -2,3 +2,6 @@ first 10 days (1st Dec to 10th Dec): finished first 15 questions in shuatihuizon
 
 every 10 days is a small goal
 
+11th Dec:
+ask 13
+
