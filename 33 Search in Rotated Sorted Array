@@ -55,8 +55,10 @@ public:
           
 
 //the process of this test case with the optimised wrong solution is as below:
-//help(nums, 5, 2, 2)    skipped this scenario if(nums[l] <= target && target < nums[mid]) so go into 'else' help(nums, target, mid+1, r)
+//help(nums, 5, 2, 2)    
 //mid = 2
 //help(nums, 5, 3, 2)
 //L>r return -1
+//this method skipped this scenario if(nums[l] <= target && target < nums[mid]) and go into 'else' help(nums, target, mid+1, r)
 //so cant be optimised in this way, the positon of the rotate point matters!
+
