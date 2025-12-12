@@ -46,6 +46,13 @@ public:
 //help(nums, 5, 0, 0)
 //mid = 0
 //return nums[0]
+//if not clear enough, think of this tecase case [5,1,2,3,4]
+//first scenario is if(nums[mid] > nums[r] && nums[l] <= target && target < nums[mid]) return help(nums, target, l, mid-1);
+//it is return the sourted part
+//'else' condition doesnt mean target is in (mid, target, r), it actually means target < l || target > nums[mid] which is not sorted area
+//so the whole process is finding the sorted area and return that area, other than this scenario it's either target is in the narrowed down sorted area
+//or not exists, every recursive process is to find the sorted area.
+          
 
 //the process of this test case with the optimised wrong solution is as below:
 //help(nums, 5, 2, 2)
