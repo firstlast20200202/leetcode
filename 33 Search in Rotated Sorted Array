@@ -59,6 +59,8 @@ public:
 //mid = 2
 //help(nums, 5, 3, 2)
 //L>r return -1
-//this method skipped this scenario if(nums[l] <= target && target < nums[mid]) and go into 'else' help(nums, target, mid+1, r)
-//so cant be optimised in this way, the positon of the rotate point matters!
+//this method skipped this scenario if(nums[l] <= target && target < nums[mid]) which is not a sorted area 
+//and got into 'else' help(nums, target, mid+1, r) which is a sorted area
+//so the next recursive processes will be all searching in this area which definitely cant find target
+//that's why this problem cant be optimised in this way, the positon of the rotate point actually matters!
 
