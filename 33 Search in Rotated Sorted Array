@@ -64,3 +64,9 @@ public:
 //so the next recursive processes will be all searching in this area which definitely cant find target
 //that's why this problem cant be optimised in this way, the positon of the rotate point actually matters!
 
+
+//dont forget the edge cases(the equal scenarios in these 'if' statements below)
+//if(nums[l] <= target && target < nums[mid])
+//if(nums[mid] < target && target <= nums[r])
+//say, for test case [1,3], if missed the equal scenario here 'if(nums[mid] < target && target <= nums[r])', it would go for 'else'
+//so return help(nums, target, l, mid-1) = help(nums, target, 0, -1) which would return -1
