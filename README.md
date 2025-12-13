@@ -5,5 +5,3 @@ every 10 days is a small goal
 11th Dec:
 ask 13
 
-
-write 42 by myself
