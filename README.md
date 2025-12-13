@@ -6,4 +6,4 @@ every 10 days is a small goal
 ask 13
 
 
-write 33 by myself
+write 33 and 42 by myself
