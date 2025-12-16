@@ -5,4 +5,7 @@ every 10 days is a small goal
 15th Dec:
 ask 13, 46
 
+17th Dec:
+think of 53
+
 
