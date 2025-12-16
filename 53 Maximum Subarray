@@ -11,3 +11,7 @@ public:
         return res;
     }
 };
+
+
+//because add is the sum of some previous elements in the vector, add < 0 means adding the sum of previous elements will make the whole sum less, 
+//that's why assigning 0 to add which gets rid of the previous elements and count the sum from the current element.
