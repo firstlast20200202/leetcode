@@ -5,7 +5,10 @@ every 10 days is a small goal
 15th Dec:
 ask 13, 46
 
-17th Dec:
+17th Dec first day:
 write 53 by myself
+didnt finish 977
+
+
 
 
