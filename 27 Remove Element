@@ -1,4 +1,4 @@
-//two pointers: fast pointer is to obtain the elements in the new array (!= val), after finding the elements, update the new indexes for slow pointer, 
+//two pointers: fast pointer is to obtain the elements in the new array (!= val), after finding the elements, update the new indexes of the element, for slow pointer, 
 //so slow pointer is to obtain the indexes in the new array.
 class Solution {
 public:
@@ -6,7 +6,7 @@ public:
         int slow = 0;
         for(int fast = 0; fast < nums.size(); fast++) {
             if(val != nums[fast]) {
-                nums[slow++] = nums[fast];
+                nums[slow++] = nums[fast];    //after last index, slow++ would be the size of the new array
             }
         }
         return slow;
