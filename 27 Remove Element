@@ -10,3 +10,22 @@ public:
         return slow;
     }
 };
+
+
+//brutal force
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int s = nums.size();
+        for(int i = 0; i < s; i++) {
+            if(nums[i] == val) {
+                for(int j = i+1; j < nums.size(); j++) {
+                    nums[j-1] = nums[j];
+                }
+                i--;    //because in next outer 'for' loop i gotta increase 1, this is to locate to the element which hasnt been compared to val
+                s--;
+            }
+        }
+        return s;
+    }
+};
