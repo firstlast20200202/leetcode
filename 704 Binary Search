@@ -68,7 +68,7 @@ public:
     int search(vector<int>& nums, int target) {
         int l = 0, r = nums.size()-1;
         while(l<=r) {
-            int mid = (l+r)/2;
+            int mid = (l+r)/2;    //better to write it like this: l+(r-l)/2, because l+r may be bigger than 32767
             if(nums[mid] == target) return mid;
             else if(nums[mid] < target) l = mid+1;
             else r = mid-1;
