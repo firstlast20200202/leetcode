@@ -1,4 +1,4 @@
-//two pointers: fast pointer is to find(point to) the elements that we need in the new array, after finding the elements, assign the new indexes to slow pointer.
+//two pointers: fast pointer is to find(point to) the elements that we need in the new array, after finding the elements, update the new indexes for slow pointer.
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
