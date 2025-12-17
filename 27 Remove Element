@@ -29,3 +29,10 @@ public:
         return s;
     }
 };
+
+//for loop works in this way:
+//initialise the value -> compare the condition -> execute statements
+//increase 1 -> compare the condition -> execute statements
+//increase 1 -> compare the condition -> execute statements
+//increase 1 -> compare the condition -> fnish the loop
+
