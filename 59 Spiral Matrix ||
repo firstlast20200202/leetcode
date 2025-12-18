@@ -15,10 +15,10 @@ public:
             //in these 4 for loops assign values to each row and column, from the first position to the second last position, 
             //and leave the last position to the next for loop, so makes it like [left, right)
             //notice that after every loop, execute i++ and j++ (or i-- and j--), which would be the start value of the next for loop
-            for (j; j < n - offset; j++) {
+            for (j; j < n - offset; j++) {    //in the first loop, j = starty as the initial value
                 res[i][j] = count++;
             }
-            for (i; i < n - offset; i++) {
+            for (i; i < n - offset; i++) {    //in the first loop, i = startx as the initial value
                 res[i][j] = count++;
             }
             for (; j > starty; j--) {    //j = n - offset now after j++ in the first for loop, so dont need to initialize j here
