@@ -57,3 +57,29 @@ public:
         return res;
     }
 };
+
+
+//written by myself wrong version: accidently assign square values to nums[i] rather than res[i] and it shows runtime error in leetcode
+//error log: Line 9: Char 23: runtime error: signed integer overflow: 65536 * 65536 cannot be represented in type 'value_type' (aka 'int') (solution.cpp)
+//SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior prog_joined.cpp:18:23
+//say, test case [-4,-1,0,3,10]: after loop 1 f = 3, i = 3; then in loop 2 nums[3] = 16 which replaced the original value of nums[3] = 3, s = 1; 
+//then in loop 3, if(n[s]*ns1]<n[f]*n[f])(aka if(n[1]*n[1]<n[3]*n[3])), n[f]*n[f] is not correct anymore.
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> res(n);
+        int s = 0;
+        int f = n-1;
+        for(int i = n-1; i >= 0; i--) {
+            if(nums[s]*nums[s] < nums[f]*nums[f]) {
+                nums[i] = nums[f]*nums[f];
+                f--;
+            else {
+                nums[i] = nums[s]*nums[s];
+                s++;
+            }
+        }
+        return res;
+    }
+};
