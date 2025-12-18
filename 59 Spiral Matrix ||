@@ -21,7 +21,7 @@ public:
             for (i; i < n - offset; i++) {
                 res[i][j] = count++;
             }
-            for (; j > starty; j--) {
+            for (; j > starty; j--) {    //j = n - offset now after j++ in the first for loop, so dont need to initialize j here
                 res[i][j] = count++;
             }
             for (; i > startx; i--) {
