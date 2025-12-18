@@ -1,10 +1,13 @@
 //two pointers method
+//as long as i <= j, the 'for' loop continues. 
+//the reason i needs to be equal to j is, after comparing two elements next to each other, i or j gotta move, which occurs the case of i == j, 
+//if i == j is not included, the last element will be skipped.
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
         int l = nums.size()-1;
         vector<int> res(nums.size(), 0);
-        for(int i = 0, j = nums.size()-1; i <= j;) {
+        for(int i = 0, j = nums.size()-1; i <= j;) {        
             if(nums[i] * nums[i] < nums[j] * nums[j]) {
                 res[l--] = nums[j] * nums[j];
                 j--;
