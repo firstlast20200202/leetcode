@@ -1,3 +1,9 @@
+//step 1: 先遵循循环不变量原则确定每次循环的边界处理规则，这里定为左闭右开
+//step 2: 确定循环什么时候结束，这里就是转几圈结束（如果n为奇数，中间数值要单独赋值）
+//step 3: 定义起始位置，因为每次都变，所以要用变量去定义
+//后面的steps看视频吧2333
+//explaination is pretty clear in this video: https://www.bilibili.com/video/BV1SL4y1N7mV?vd_source=9322ecb26603acea14a629502f8ab4cf&spm_id_from=333.788.videopod.sections
+
 class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
