@@ -1,3 +1,4 @@
+//two pointers method
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
@@ -27,5 +28,28 @@ public:
         }
         sort(nums.begin(), nums.end());
         return nums;
+    }
+};
+
+
+//written by myself: two pointers method
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> res(n);
+        int s = 0;
+        int f = n-1;
+        for(int i = n-1; i >= 0; i--) {
+            if(nums[s]*nums[s] < nums[f]*nums[f]) {
+                res[i] = nums[f]*nums[f];
+                f--;
+            }
+            else {
+                res[i] = nums[s]*nums[s];
+                s++;
+            }
+        }
+        return res;
     }
 };
