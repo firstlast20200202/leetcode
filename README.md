@@ -8,6 +8,7 @@ ask 13, 46
 19th Dec third day:
 
 write 59 by myself
+look at 209
 
 
 
