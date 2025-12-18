@@ -1,5 +1,6 @@
 //two pointers method
-//as long as i <= j, the 'for' loop continues. 
+//as long as i <= j, the 'for' loop continues. here i <= j is the condition of the 'for' loop. for the third part of the loop which usually is i++,
+//because here would be i++ or j--, but either i++ or j-- is not executed every time, so neither of them can be put here.
 //the reason i needs to be equal to j is, after comparing two elements next to each other, i or j gotta move, which occurs the case of i == j, 
 //if i == j is not included, the last element will be skipped.
 class Solution {
