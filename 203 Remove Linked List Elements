@@ -18,3 +18,5 @@ struct ListNode {
 
 //所以如果不定义构造函数使用默认构造函数的话，在初始化的时候就不能直接给变量赋值！
 
+//in c++ afterdeleting a node, gotta manually release the memory
+
