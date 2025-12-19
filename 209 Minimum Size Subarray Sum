@@ -16,3 +16,26 @@ public:
         return res == INT32_MAX ? 0 : res;
     }
 };
+
+
+//brutal force method: when run this code in leetcode, it can be accepted by some test cases; but submit would cause time limit exceed issue.
+class Solution {
+public:
+    int minSubArrayLen(int target, vector<int>& nums) {
+        int res = INT32_MAX;
+        int sum = 0;
+        int subLength = 0;
+        for(int i = 0; i < nums.size(); i++) {
+            sum = 0;
+            for(int j = i; j < nums.size(); j++) {
+                sum += nums[j];
+                if(sum >= target) {
+                    subLength = j - i + 1;
+                    res = res < subLength ? res : subLength;
+                    break;
+                }
+            }
+        }
+        return res == INT_MAX ? 0 : res;
+    }
+};
