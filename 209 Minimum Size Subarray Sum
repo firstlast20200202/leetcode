@@ -1,3 +1,6 @@
+//sliding window method: 
+//the variable in 'for' loop must represent the ending index rather than starting index, because if it's starting index of the sub array, in every loop
+//it will go through pretty much the whole array till the end, which make the complexity O(n^2).
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {
