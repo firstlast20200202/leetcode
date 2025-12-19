@@ -12,7 +12,7 @@ public:
             sum += nums[j];
             while(sum >= target) {
                 subLength = j-i+1;
-                res = res < subLength ? res : subLength;
+                res = res < subLength ? res : subLength;    //or res = min(res, subLength);
                 sum -= nums[i++];
             }
         }
