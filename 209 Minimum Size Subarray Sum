@@ -4,7 +4,7 @@
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {
-        int res = INT32_MAX;
+        int res = INT32_MAX;    //initialize to INT32_MAX, so later we can get the minimum value of res = min(res, subLength);
         int subLength = 0;
         int sum = 0; 
         int i = 0;
