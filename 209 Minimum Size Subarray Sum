@@ -1,4 +1,4 @@
-//sliding window method: the point of this method is 'on every fixed ending point, keep moving the starting point of the sub array'
+//sliding window method: the point of this method is 'at every fixed ending point, keep moving the starting point of the sub array'
 //the variable in 'for' loop must represent the ending index rather than starting index, because if it's starting index of the sub array, in every loop
 //it will go through pretty much the whole array till the end, which make the complexity O(n^2).
 class Solution {
