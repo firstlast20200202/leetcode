@@ -35,7 +35,7 @@ public:
             }
             startx++;                   //shorten 1 index at the start of the while loop
             starty++;                   //shorten 1 index at the start of the while loop
-            offset += 1;                //shorten 1 index at the end of the first two for loops
+            offset++;                //shorten 1 index at the end of the first two for loops
         }
         if (n % 2) {
             res[mid][mid] = count;
