@@ -9,6 +9,9 @@ ask 13, 46
 
 third day:
 
+707 hasnt finished
+
+
 
 
 
