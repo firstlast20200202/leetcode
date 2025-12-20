@@ -72,7 +72,10 @@ public:
     ListNode* removeElements(ListNode* head, int val) { 
         ListNode* dummyHead = new ListNode(0);
         dummyHead -> next = head;
-        ListNode* cur = dummyHead;    //go through the list with cur, and keep the position of dummyHead, so at the end can return dummyHead
+        //go through the list with cur, and keep the position of dummyHead, so at the end can return dummyHead
+        //the reason assign dummyHead to cur rather than assign dummyHead -> next to cur, is because we will delete cur -> next, we dont delete dummyHead
+        //in while loop, so if we will cur -> next, we must know the previous of node of cur -> next which is cur, so that cur can point to cur -> next -> next directly.
+        ListNode* cur = dummyHead;    
         while(cur -> next != NULL) {
             if(cur -> next -> val == val) {
                 ListNode* tmp = cur -> next;
