@@ -72,7 +72,7 @@ public:
     ListNode* removeElements(ListNode* head, int val) { 
         ListNode* dummyHead = new ListNode(0);
         dummyHead -> next = head;
-        ListNode* cur = dummyHead;
+        ListNode* cur = dummyHead;    //go through the list with cur, and keep the position of dummyHead, so at the end can return dummyHead
         while(cur -> next != NULL) {
             if(cur -> next -> val == val) {
                 ListNode* tmp = cur -> next;
