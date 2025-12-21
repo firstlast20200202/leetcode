@@ -1,3 +1,5 @@
+//hash is used to quickly find out whether an element is in an array or not, but it sacrifices the memory to optimise time
+
 class Solution {
 public:
     bool isAnagram(string s, string t) {
