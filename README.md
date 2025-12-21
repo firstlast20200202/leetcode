@@ -9,7 +9,7 @@ day 2: skipped 区间和 开发商购买土地
 
 day 3: 707 hasnt finished
 
-day 4: didnt do at all
+day 4: didnt do at all, 24, 19, 02/07, 142
 
 
 
