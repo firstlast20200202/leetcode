@@ -5,11 +5,11 @@ every 10 days is a small goal
 15th Dec:
 ask 13, 46
 
-2nd day: skipped 区间和 开发商购买土地
+day 2: skipped 区间和 开发商购买土地
 
-third day:
+day 3: 707 hasnt finished
 
-707 hasnt finished
+day 4: didnt do at all
 
 
 
