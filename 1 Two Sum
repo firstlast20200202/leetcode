@@ -3,7 +3,7 @@ public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> res(2);
         unordered_map<int, int> map;
-        for(int i = 0; i < nums.size(); i++) {
+        for(int i = 0; i < nums.size(); i++) {    //we cant do it like this as in set and vector: for(int num : nums), because it's only for values, wnereas in maps we need keys and values both
             int tmp = target - nums[i];
             if(map.find(tmp) != map.end()) {
                 res[0] = i;
