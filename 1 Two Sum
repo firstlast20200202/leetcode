@@ -11,6 +11,7 @@ public:
         vector<int> res(2);
         unordered_map<int, int> map;
         //we cant do it like this as in set and vector: for(int num : nums), because it's only for values, wnereas in maps we need keys and values both
+        //also that's why we use map rather than set in this problem: map stores key and value, set only stores value
         for(int i = 0; i < nums.size(); i++) {    
             int tmp = target - nums[i];
             if(map.find(tmp) != map.end()) {
