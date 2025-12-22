@@ -10,7 +10,7 @@ public:
         for(int j = 0; j < t.size(); j++) {
             record[t[j]-'a']--;
         }
-        for(int k = 0; k < 26; k++) {
+        for(int k = 0; k < 26; k++) {        //length of an array: sizeof(record)/sizeof(record[0])
             if(record[k] != 0) return false;
         }
         return true;
