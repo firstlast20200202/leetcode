@@ -17,3 +17,13 @@ public:
         return vector<int>(res.begin(), res.end());
     }
 };
+
+
+//to understand the ':', the part of 'for(int num : nums2)' can be rewritten in this way: remember num represents values of the vector rather than the indexes of the loop, that's why
+//we need nums2.at function to get the values first in each loop
+//for (int num = 0; num < nums2.size(); num++) {
+//            int value = nums2.at(num);
+//            if (nums_set.find(value) != nums_set.end()) {
+//                result_set.insert(value);
+//            }
+//        }
