@@ -1,6 +1,9 @@
 //To transfer elements from a C++ std::vector to an std::set, the most efficient and common method is using the set's range constructor. 
 //This automatically inserts all unique elements from the vector into the set upon creation, maintaining the set's sorted and unique properties. 
 
+//The simplest and most efficient way to convert a set to a vector is to use the std::vector range constructor, which takes the beginning and end iterators of the set as arguments. 
+//The elements are copied in the sorted order defined by the set. 
+
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
