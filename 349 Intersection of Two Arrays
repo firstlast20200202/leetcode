@@ -7,7 +7,7 @@
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-        unordered_set<int> tmp(nums1.begin(), nums1.end());
+        unordered_set<int> tmp(nums1.begin(), nums1.end());    //data structure of unordered_set gets rid of duplicate elements itself
         unordered_set<int> res;
         for(int num : nums2) {
             if(tmp.find(num) != tmp.end()) {
