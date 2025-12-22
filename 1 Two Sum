@@ -19,6 +19,7 @@ public:
                 break;    //dont execute the current and following loops 
             }
             else {
+                who will be the key of the map? the one we are looking for, in this case it's the vector's values rather than the indexes, so the indexes are the map values
                 map.insert({nums[i], i});
         }
         return res;
