@@ -4,11 +4,11 @@ public:
         vector<vector<int>> res;
         sort(nums.begin(), nums.end());
         for(int i = 0; i < nums.size(); i++) {
-            if(nums[i] >= 0 && nums[i] > target) break;      //剪枝
-            if(i > 0 && nums[i] == nums[i - 1]) continue;    //对nums[i]去重
+            if(nums[i] >= 0 && nums[i] > target) break;          //剪枝
+            if(i > 0 && nums[i] == nums[i - 1]) continue;        //对nums[i]去重
             for(int j = i + 1; j < nums.size(); j++) {
-                if((nums[i] + nums[j]) >= 0 && (nums[i] + nums[j]) > target) break;      //剪枝
-                if(j > i + 1 && nums[j] == nums[j - 1]) continue;                        //对nums[j]去重
+                if((nums[i] + nums[j]) >= 0 && (nums[i] + nums[j]) > target) break;          //剪枝
+                if(j > i + 1 && nums[j] == nums[j - 1]) continue;                            //对nums[j]去重
                 int l = j + 1;
                 int r = nums.size() - 1;
                 while(l < r) {
