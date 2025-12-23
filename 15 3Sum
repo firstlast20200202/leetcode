@@ -68,7 +68,7 @@ public:
                     l++;
                     r--;
                     while(l < r && nums[l] == nums[l-1]) l++;    
-                    while(l < r && nums[r] == nums[r+1]) r--;
+                    while(l < r && nums[r] == nums[r+1]) r--;    //这两步去重操作一定要放在收获结果后面，不能放在while的condition里边，要先收获一波结果再去重
                 }
             }
         }
