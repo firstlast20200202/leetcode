@@ -12,7 +12,7 @@ public:
                 int l = j + 1;
                 int r = nums.size() - 1;
                 while(l < r) {
-                    if((long) nums[i] + nums[j] + nums[l] + nums[r] > target) r--;      //why????????????????????
+                    if((long) nums[i] + nums[j] + nums[l] + nums[r] > target) r--;      //long works to nums[i] only, and all the other three values auto-change to long type
                     else if((long) nums[i] + nums[j] + nums[l] + nums[r] < target) l++;
                     else {
                         res.push_back({nums[i], nums[j], nums[l], nums[r]});
