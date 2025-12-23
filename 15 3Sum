@@ -54,7 +54,6 @@ class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         vector<vector<int>> res;
-        if(nums.empty()) return res;
         sort(nums.begin(), nums.end());
         for(int i = 0; i < nums.size(); i++) {
             if(i >= 1 && nums[i] == nums[i-1]) continue;    //would repeat last loop, can't compare nums[i] and nums[i+1], because it actually compares nums[i] and nums[l] say [-1,-1,2]
