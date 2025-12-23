@@ -49,7 +49,7 @@ public:
 
 
 
-//method 2
+//method 2: two pointers method
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -67,7 +67,7 @@ public:
                     res.push_back({nums[i], nums[l], nums[r]});
                     l++;
                     r--;
-                    while(l < r && nums[l] == nums[l-1]) l++;
+                    while(l < r && nums[l] == nums[l-1]) l++;    //can't compare nums[i] and nums[i+1], because it actually compares nums[i] and nums[l]
                     while(l < r && nums[r] == nums[r+1]) r--;
                 }
             }
