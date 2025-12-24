@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string s;
+    while(cin >> s) {
+        int sizeOld = s.size()-1;
+        int count = 0;
+        for(int i = 0; i < s.size(); i++) {
+        if(s[i] <= '9' && s[i] >= '0') {
+            count++;
+        }
+    }
+
+    s.resize(s.size()+count*5);
+    int sizeNew = s.size()-1;
+    while(sizeOld >= 0) {
+        if(s[sizeOld] >= '0' && s[sizeOld] <= '9') {
+            s[sizeNew--] = 'r';
+            s[sizeNew--] = 'e';
+            s[sizeNew--] = 'b';
+            s[sizeNew--] = 'm';
+            s[sizeNew--] = 'u';
+            s[sizeNew--] = 'n';
+        }
+        else {
+            s[sizeNew--] = s[sizeOld];
+        }
+        sizeOld--;
+    }
+    cout << s;
+    }
+}
