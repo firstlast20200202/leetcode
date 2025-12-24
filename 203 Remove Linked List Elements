@@ -86,7 +86,7 @@ public:
                 cur = cur -> next;
             }
         }
-        head = dummyHead -> next;
+        head = dummyHead -> next;    //head node never changed
         delete dummyHead;
         return head;
     }
