@@ -86,7 +86,7 @@ public:
                 cur = cur -> next;
             }
         }
-        head = dummyHead -> next;    //head node never changed, dummyHead node never changed as well, the node that lept changing is cur node
+        head = dummyHead -> next;    //head node never changed, dummyHead node never changed as well, the node that kept changing is cur node
         delete dummyHead;
         return head;
     }
