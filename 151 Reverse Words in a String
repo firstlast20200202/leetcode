@@ -1,6 +1,6 @@
 class Solution {
 public:    
-    //in the first self defined functions, if we dont add '&' into the argument, it would change the copt of the string in the main function rather than the string itself
+    //in the first two self-defined functions, if we dont add '&' into the argument, it would change the copt of the string in the main function rather than the string itself
     void reverse(string& s, int start, int end){ //翻转，区间写法：左闭右闭 []    
         for (int i = start, j = end; i < j; i++, j--) {
             swap(s[i], s[j]);
