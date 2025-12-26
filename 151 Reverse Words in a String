@@ -11,6 +11,8 @@ public:
         for (int i = 0; i < s.size(); ++i) { //
             if (s[i] != ' ') { //遇到非空格就处理，即删除所有空格。
                 if (slow != 0) s[slow++] = ' '; //手动控制空格，给单词之间添加空格。slow != 0说明不是第一个单词，需要在单词前添加空格。
+                // also here how do I know it reaches a space? because in the while loop next line, it's assigning a word to s[slow] until it reaches a space then it would get back to the next 'for' loop and execute i++
+                //and in the for loop, it only deals with the scenarios when s[i] is not a space, so when it's a space, it would skip the scenario and execute i++ again
                 while (i < s.size() && s[i] != ' ') { //补上该单词，遇到空格说明单词结束。
                     s[slow++] = s[i++];
                 }
