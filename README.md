@@ -11,6 +11,10 @@ day 3: 707 hasnt finished
 
 day 4: didnt do at all, 24, 19, 02/07, 142
 
+28th: write 1047 by myself
+
+
+ 
 
 
 
