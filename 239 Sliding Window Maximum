@@ -38,3 +38,5 @@ public:  //this public is mandatory, otherwise it gets a compile error
         return res;
     }
 };
+
+//如果要pop的值在队列的出口处 说明这个值是当前滑动窗口的最大值
