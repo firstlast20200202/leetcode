@@ -11,8 +11,8 @@ private:
             }
         }
         void pushElement(int value) {
-            while(!dq.empty() && value > dq.front()) {
-                dq.pop_front();
+            while(!dq.empty() && value > dq.back()) {
+                dq.pop_back();
             }
             dq.push_back(value);
         }
