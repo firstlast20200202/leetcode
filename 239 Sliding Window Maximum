@@ -26,7 +26,7 @@ public:  //this public is mandatory, otherwise it gets a compile error
         vector<int> res;
         //go through first k window to build mq and res
         for(int i = 0; i < k; i++) {
-            mq.pushElement(nums[i]);
+            mq.pushElement(nums[i]);    //push in this way, it will get the biggest element in the very front of the queue
         }
         res.push_back(mq.frontElement());
         //start moving k window
