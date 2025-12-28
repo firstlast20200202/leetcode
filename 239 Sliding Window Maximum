@@ -24,12 +24,12 @@ public:  //this public is mandatory, otherwise it gets a compile error
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
         MyQueue mq;
         vector<int> res;
-        //go through first k window to build mq and res
+        //go through first k window to build mq and res by calling push and front functions (here dont need to pop elenent first)
         for(int i = 0; i < k; i++) {
             mq.pushElement(nums[i]);    //push in this way, it will get the biggest element in the very front of the queue
         }
         res.push_back(mq.frontElement());    stock the biggest element in the first window
-        //start moving k window
+        //start moving k window, fromt second k wondow call pop, push and front three functions to get the max element in each window
         for(int i = k; i < nums.size(); i++) {
             mq.popElement(nums[i-k]);    //first element in every window 
             mq.pushElement(nums[i]);    //the element after the window
