@@ -18,7 +18,7 @@ public:
         while(!que.empty()) {    //ending condition of while loop is that the queue is empty, that's why we need to push the root node into the queue first
             int size = que.size();    //get the size of every depth of the tree
             vector<int> vec;    //vector is used to stock elements of every depth
-            for(int i = 0; i < size; i++) {    //browse elements of every layer based on the size, for each node: add into the vector, pop, and add child nodes into the queue; i here is just a counter
+            for(int i = 0; i < size; i++) {    //browse elements of every layer based on the size, for each node: add into the vector, pop, and add child nodes into the queue; i here is just a counter, counting how many nodes to be dealt with in the queue
                 TreeNode* node = que.front();
                 que.pop();
                 vec.push_back(node -> val);
