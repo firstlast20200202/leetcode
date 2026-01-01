@@ -16,7 +16,6 @@ day 4: didnt do at all, 24, 19, 02/07, 142
 
 didnt do 347, should do 239 by myself
 
-write 429 by myself ad think of them,wring one by one step
 
  
 
