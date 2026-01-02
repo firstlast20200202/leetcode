@@ -21,6 +21,10 @@ didnt do 347, should do 239 by myself
 
 
 
+ tomorrow morning: 104
+
+
+
 
 
 
