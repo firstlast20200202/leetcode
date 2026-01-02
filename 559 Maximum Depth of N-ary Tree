@@ -1,0 +1,37 @@
+/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    vector<Node*> children;
+
+    Node() {}
+
+    Node(int _val) {
+        val = _val;
+    }
+
+    Node(int _val, vector<Node*> _children) {
+        val = _val;
+        children = _children;
+    }
+};
+*/
+
+class Solution {
+public:
+    int getDepth(Node* node) {
+        if(node == NULL) return 0;
+        int max_depth = 0;  //if it doesnt assign 0 to the variable when initialising it, it would output the address of the variable when try cout << max_depth
+        //cout << max_depth;
+        for(int i = 0; i < node -> children.size(); i++) {
+            int children_depth;
+            if(node -> children[i]) children_depth = getDepth(node -> children[i]);
+            max_depth = max_depth > children_depth ? max_depth : children_depth;
+        }
+        return 1 + max_depth;
+    }
+    int maxDepth(Node* root) {
+        return getDepth(root);
+    }
+};
