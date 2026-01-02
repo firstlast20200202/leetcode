@@ -17,7 +17,7 @@ public:
         if(leftHeight == -1) return -1;
         int rightHeight = getHeight(node -> right);
         if(rightHeight == -1) return -1;
-        int parentHeight = abs(leftHeight - rightHeight);
+        int parentHeight = abs(leftHeight - rightHeight);    //这里必须后序遍历postorder traversal 因为根结点的高度是基于左节点和右节点的高度算出来的 
         if(parentHeight > 1) return -1;
         else return 1 + max(leftHeight, rightHeight);
     }
