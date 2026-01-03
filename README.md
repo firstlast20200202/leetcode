@@ -23,7 +23,7 @@ didnt do 347, should do 239 by myself
 
  tomorrow morning: 104
 
-4th Jan morning write by myself: 404 222
+4th Jan morning write by myself: 222
 
 
 
