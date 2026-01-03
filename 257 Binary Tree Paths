@@ -12,7 +12,7 @@
 class Solution {
 private:
     void traversal(TreeNode* node, vector<int>& path, vector<string>& res) {
-        path.push_back(node -> val);
+        path.push_back(node -> val);    //building path from root node, say 1,2,5 or 1,3...
         if(node -> left == NULL && node -> right == NULL) {
             string sPath;
             for(int i = 0; i < path.size() - 1; i++) {
