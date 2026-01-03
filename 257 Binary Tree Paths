@@ -42,3 +42,7 @@ public:
         return res;
     }
 };
+
+
+//这里每一次递归都先把node->left or node->right push进来，然后再pop出去，比如test case Input: root = [1,2,3,null,5]，在if(node -> left) {traversal(node -> left, path, res); path.pop_back();}中，先在traversal(5, path, res)里push5进了path，
+//然后立马pop了5，这就完成了回溯的过程，使得path一步一步回到只剩下根节点1，好遍历右子树。
