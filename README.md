@@ -17,11 +17,9 @@ day 4: didnt do at all, 24, 19, 02/07, 142
 didnt do 347, should do 239 by myself
 
 
- 116 117 111
+116 117 111
 
 
-
- tomorrow morning: 104
 
 
 
