@@ -27,3 +27,12 @@ public:
         return getDepth(root);
     }
 };
+
+
+//or there are actually 4 cenarios as below, the 3rd and 4th ones are getting the same result, that's why we can combine them into one which is wriiten in the way as above
+if(node -> left != NULL && node -> right == NULL) return 1 + leftDepth;
+        if(node -> left == NULL && node -> right != NULL) return 1 + rightDepth;
+        if(node -> left != NULL && node -> right != NULL) 
+        res = 1 + min(leftDepth, rightDepth);
+        if(node -> left == NULL && node -> right == NULL) res = 1;
+        return res;
