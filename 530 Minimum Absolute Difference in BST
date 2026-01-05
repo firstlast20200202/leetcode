@@ -16,9 +16,9 @@ private:
     void traversal(TreeNode* cur) {    // because it's traversal the whole tree, so no return value
         if(cur == NULL) return;
         traversal(cur -> left);     //traversal left
-        if(pre != NULL) res = min(res, cur -> val - pre -> val);    //middle
+        if(pre != NULL) res = min(res, cur -> val - pre -> val);    //traversal middle
         pre = cur;
-        traversal(cur -> right);
+        traversal(cur -> right);    //traversal right 
     }
 public:
     int getMinimumDifference(TreeNode* root) {
