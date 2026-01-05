@@ -26,3 +26,5 @@ public:
         return res;
     }
 };
+
+//for binary search trees always use inorder traversal, in this way the order will be ascending
