@@ -19,7 +19,7 @@ didnt do 347, should do 239 by myself
 
 116 117 111 236
 
-day 18 and day 20: didnt do them
+day 18: didnt do them
 
 
 
