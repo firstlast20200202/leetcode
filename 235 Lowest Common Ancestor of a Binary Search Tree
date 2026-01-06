@@ -21,7 +21,7 @@ public:
 };
 
 
-//or can be written in this way
+//or can be written in this easier way
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
