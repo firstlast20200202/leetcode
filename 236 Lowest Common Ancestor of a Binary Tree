@@ -13,7 +13,7 @@ public:
         if(root == NULL || root == p || root == q) return root;
         TreeNode* leftSide = lowestCommonAncestor(root -> left, p, q);
         TreeNode* rightSide = lowestCommonAncestor(root -> right, p, q);
-        if(leftSide != NULL && rightSide != NULL) return root;
+        if(leftSide != NULL && rightSide != NULL) return root;            //comparing leftSide rather than root -> left, which is used to collect values to send to upper levels of the tree
         else if(leftSide != NULL && rightSide == NULL) return leftSide;
         else if(leftSide == NULL && rightSide != NULL) return rightSide;
         else return NULL;   //leftSide == MULL && rightSide == NULL
