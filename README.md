@@ -21,6 +21,8 @@ didnt do 347, should do 239 by myself
 
 day 17 and 18: didnt do them
 
+didnt do 450
+
 
 
 
