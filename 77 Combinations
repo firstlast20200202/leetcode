@@ -22,4 +22,4 @@ public:
 
 
 //pruning
-for(int i = startIndex; i <= k-(k-path.size())+1; i++) 
+for(int i = startIndex; i <= n-(k-path.size())+1; i++) 
