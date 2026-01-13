@@ -31,7 +31,7 @@ public:  //this public is mandatory, otherwise it gets a compile error
         res.push_back(mq.frontElement());    stock the biggest element of the first window
         //start moving k window, fromt second k wondow call pop, push and front three functions to get the max element in each window
         for(int i = k; i < nums.size(); i++) {
-            mq.popElement(nums[i-k]);    //first element in every window 
+            mq.popElement(nums[i-k]);    //first element in every window, it doesnt pop every time, because only if when nums[i-k] is the biggest in the current window, it will pop.
             mq.pushElement(nums[i]);    //the element after the window
             res.push_back(mq.frontElement());
         }
