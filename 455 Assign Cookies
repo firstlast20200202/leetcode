@@ -14,3 +14,6 @@ public:
         return res;
     }
 };
+
+//'for' loop is going through the children's greed factor, and it has to be the outer loop instead of size, because if s[j] == 9 and g[i] == 10, and j keeps decreasing values, all the s[j]
+//will compare with 10 and nothing will be implemented.
