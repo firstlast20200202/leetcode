@@ -11,7 +11,7 @@ private:
             }    
         }
         void pushElement(int value) {
-            while(!dq.empty() && value > dq.back()) {    //compare the back element
+            while(!dq.empty() && value > dq.back()) {    //compare the BACK element
                 dq.pop_back();    //pop from the BACK of the queue
             }
             dq.push_back(value);
