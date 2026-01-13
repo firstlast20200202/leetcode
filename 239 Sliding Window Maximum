@@ -16,7 +16,7 @@ private:
             }
             dq.push_back(value);
         }
-        int frontElement() {
+        int frontElement() {    //get max value of each window
             return dq.front();
         }
     };
