@@ -23,7 +23,8 @@ day 17 and 18 and 22: didnt do them
 
 didnt do 450
 
-17 write by myself
+13th night review:
+17, 455
 
 
 
