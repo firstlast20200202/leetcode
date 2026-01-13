@@ -6,7 +6,7 @@ public:
         int res = 0;
         int j = s.size() - 1;
         for(int i = g.size() - 1; i >= 0; i--) {
-            if(j >= 0 && s[j] >= g[i]) {
+            if(j >= 0 && s[j] >= g[i]) {    //j >= 0 has to be ahead of s[j] >= g[i], otherwise it throws an error
                 res++;
                 j--;
             }
