@@ -14,7 +14,7 @@ day 4: didnt do at all, 24, 19, 02/07, 142
 28th: write 1047 by myself
 
 
-didnt do 347, should do 239 by myself
+fnished 239, didnt do 347
 
 
 116 117 111 236
