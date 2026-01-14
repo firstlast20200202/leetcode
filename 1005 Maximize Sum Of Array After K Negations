@@ -1,0 +1,22 @@
+class Solution {
+static bool cmp(int a, int b) {     //there has to be 'static', otherwise it shows an error when call this cmp function later
+    return abs(a) > abs(b);
+}
+public:
+    int largestSumAfterKNegations(vector<int>& nums, int k) {
+        int res = 0;
+        sort(nums.begin(), nums.end(), cmp);
+        for(int i = 0; i < nums.size(); i++) {
+            if(nums[i] < 0 && k > 0) {
+                nums[i] = 0 - nums[i]; 
+                k--;
+            }
+            //sum += nums[i];
+        }
+        if(k % 2 == 1) {
+            nums[nums.size() - 1] *= -1;
+        }   
+        for(int n : nums) res += n;
+        return res;
+    }
+};
