@@ -23,8 +23,8 @@ day 17 and 18 and 22: didnt do them
 
 didnt do 450
 
-14th morning review:
-17
+15th morning review:
+17, 122, 55, 45, 1005
 
 
 
