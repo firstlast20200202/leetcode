@@ -23,7 +23,7 @@ day 17 and 18 and 22: didnt do them
 
 didnt do 450
 
-15th morning review:
+15th night review:
 17, 55, 45
 
 
