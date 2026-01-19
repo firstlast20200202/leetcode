@@ -28,8 +28,8 @@ didnt do 450
 
 406, 968没做
 
-19th morning:
-56, 738
+20th morning:
+56, 738, 746
 
 
 
