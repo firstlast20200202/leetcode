@@ -26,7 +26,10 @@ didnt do 450
 15th night review:
 17, 55, 45
 
-406, 968没做
+968没做
+
+21sr morning:
+406
 
 
 
