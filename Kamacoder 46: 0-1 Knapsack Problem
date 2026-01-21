@@ -17,7 +17,10 @@ int main() {
     }
     
     vector<vector<int>> dp(weight.size(), vector<int>(bagweight+1, 0));
-    for(int j = weight[0]; j <= bagweight; j++) {
+
+    //j here represents current backpack capacity, j is not an index of items, j is the weight limit of the bag
+    so if j < weight[0], dp[0][j] == 0; if j >= weight[0], dp[0][j] = value[0]
+    for(int j = weight[0]; j <= bagweight; j++) {    
         dp[0][j] = value[0];
     }
     
