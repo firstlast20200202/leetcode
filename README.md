@@ -28,8 +28,6 @@ didnt do 450
 
 968没做
 
-21sr morning:
-406
 
 
 
