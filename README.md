@@ -26,7 +26,7 @@ didnt do 450
 15th night review:
 17, 55, 45
 
-968没做
+968, 494, 474没做
 
 25th Jan morning:
 
