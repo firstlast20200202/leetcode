@@ -28,6 +28,10 @@ didnt do 450
 
 968没做
 
+25th Jan morning:
+
+416
+
 
 
 
