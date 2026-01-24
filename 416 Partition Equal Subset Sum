@@ -8,7 +8,7 @@ public:
         if(sum % 2 == 1) return false;
         int target = sum / 2;
 
-        vector<int> dp(target + 1, 0);
+        vector<int> dp(target + 1, 0);    //The DP array size should be based on target = sum / 2, not nums.size()/2.
         for(int i = 0; i < nums.size(); i++) {
             for(int j = target; j >= nums[i]; j--) {
                 dp[j] = max(dp[j], dp[j - nums[i]] + nums[i]);
