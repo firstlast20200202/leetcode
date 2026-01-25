@@ -1,3 +1,4 @@
+//this problem is asking how many ways to full fill the bag, rather than max value when the bag is full
 class Solution {
 public:
     int findTargetSumWays(vector<int>& nums, int target) {
