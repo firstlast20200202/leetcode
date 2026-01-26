@@ -8,6 +8,11 @@ public:
         for(int i = 0; i < n; i++) {
             sum += nums[i];
         }
+        //why here it's gotta be abs(target): 
+        //because each number can only contribute in one of two ways: +nums[i], -nums[i]
+        //so max possible sum is +nums[0] + nums[1] + ... + nums[n-1] = sum
+        //min possible num is -nums[0] - nums[1] - ... - nums[n-1] = -sum
+        //therefore the result must lie in this range [-sum, +sum]
         if(abs(target) > sum) return 0;
         if((sum + target) % 2 == 1) return 0;
         int x = (sum + target) / 2;
