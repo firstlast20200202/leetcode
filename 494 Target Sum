@@ -8,7 +8,7 @@ public:
         for(int i = 0; i < n; i++) {
             sum += nums[i];
         }
-        //why here it's gotta be abs(target): 
+        //why sum is comparing to abs(target):
         //because each number can only contribute in one of two ways: +nums[i], -nums[i]
         //so max possible sum is +nums[0] + nums[1] + ... + nums[n-1] = sum
         //min possible num is -nums[0] - nums[1] - ... - nums[n-1] = -sum
