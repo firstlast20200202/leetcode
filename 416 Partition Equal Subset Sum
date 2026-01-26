@@ -17,3 +17,28 @@ public:
         return dp[target] == target;
     }
 };
+
+
+//2 dimention method
+class Solution {
+public:
+    bool canPartition(vector<int>& nums) {
+        int sum = 0;
+        for(int i = 0; i < nums.size(); i++) {
+            sum += nums[i];
+        }
+        if(sum % 2 == 1) return false;
+        int target = sum / 2;
+        vector<vector<int>> res(nums.size(), vector<int>(target + 1, 0));
+        for(int i = nums[0]; i < target + 1; i++) {
+            res[0][i] = nums[0];
+        }
+        for(int i = 1; i < nums.size(); i++) {
+            for(int j = 0; j < target + 1; j++) {
+                if(nums[i] > j) res[i][j] = res[i - 1][j];
+                else res[i][j] = max(res[i - 1][j], res[i - 1][j - nums[i]] + nums[i]);
+            }
+        }
+        return res[nums.size() - 1][target] == target;
+    }
+};
