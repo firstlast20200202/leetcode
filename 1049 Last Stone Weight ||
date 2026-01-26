@@ -1,3 +1,4 @@
+//if one group has sum x, the other has sum - x, so funal result is |sum - x - x| = |sum - 2x|, to minimize this, make x as close as possible to sum / 2, thats where the idea is from
 class Solution {
 public:
     int lastStoneWeightII(vector<int>& stones) {
