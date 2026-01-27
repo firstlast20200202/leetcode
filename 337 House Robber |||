@@ -19,8 +19,7 @@ public:
         int val2 = max(left[0], left[1]) + max(right[0], right[1]);
         return {val2, val1};
     }
-
-
+    
     int rob(TreeNode* root) {
         vector<int> res = robTree(root);
         return max(res[0], res[1]);
