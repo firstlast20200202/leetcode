@@ -10,7 +10,7 @@
  * };
  */
 
-//for every node, node[0] is rob it, node[1] is not rob it,so vector<int> node(2) is a vector which represents two statuses of the node
+//for every node, node[0] is not rob it, node[1] is rob it,so vector<int> node(2) is a vector which represents two statuses of the node
 class Solution {
 public:
     vector<int> robTree(TreeNode* cur) {
