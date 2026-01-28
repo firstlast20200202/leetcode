@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+//for every node, node[0] is rob it, node[1] is not rob it,so vector<int> node(2) is a vector which represents two statuses of the node
 class Solution {
 public:
     vector<int> robTree(TreeNode* cur) {
