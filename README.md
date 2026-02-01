@@ -31,7 +31,7 @@ didnt do 450
 dp: make first 8 parts 
 today: 474 and 完全背包理论基础
 
-1st Feb: 完全背包
+1st Feb: 完全背包 lingqianduihuan
 
 
 
