@@ -6,7 +6,7 @@ public:
         for(int i = 0; i < coins.size(); i++) {
             for(int j = coins[i]; j <= amount; j++) {
                 if(res[j] < INT_MAX - res[j - coins[i]]) {    //if(res[j] + res[j - coins[i]] < INT_MAX) get an error: res[j] + res[j - coins[i]] would be bigger than INT_MAX which is already overflow
-                    res[j] += res[j - coins[i]];    //this dp formula is to calculate how many ways to fullfill the bag
+                    res[j] += res[j - coins[i]];    //this dp formula is to calculate how many ways to fullfill the bag which is the same as problem 494
                 }
             }
         }
