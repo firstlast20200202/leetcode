@@ -14,4 +14,4 @@ public:
     }
 };
 
-//Combinations are counted, not permutations
+//Combinations(组合) are counted, not permutations(排列)
