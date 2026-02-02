@@ -1,11 +1,13 @@
 class Solution {
 public:
     int change(int amount, vector<int>& coins) {
-        vector<long long> res(amount + 1, 0);
+        vector<int> res(amount + 1, 0);
         res[0] = 1;
         for(int i = 0; i < coins.size(); i++) {
             for(int j = coins[i]; j <= amount; j++) {
-                res[j] += res[j - coins[i]];
+                if(res[j] < INT_MAX - res[j - coins[i]]) {
+                    res[j] += res[j - coins[i]];
+                }
             }
         }
         return res[amount];
