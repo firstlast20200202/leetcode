@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
-        vector<int> res(temperatures.size(), 0);
+        vector<int> res(temperatures.size(), 0);    //stocks distances of two elements by calculating indexes' difference of temperatures
         stack<int> st;    //stocks indexes of temperatures vector
         st.push(0);
         for(int i = 0; i < temperatures.size(); i++) {
