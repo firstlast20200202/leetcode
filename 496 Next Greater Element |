@@ -103,5 +103,10 @@ public:
 //Returns:
 //1 → key exists
 //0 → key does NOT exist
-
+//example:
+//unordered_map<int, int> mp;
+//mp[2] = 10;
+//mp[5] = 20;
+//cout << mp.count(2); // 1
+//cout << mp.count(3); // 0
 
