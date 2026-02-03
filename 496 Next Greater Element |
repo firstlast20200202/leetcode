@@ -99,7 +99,9 @@ public:
         return res;
     }
 };
-
-
+//unordered_map::count(key)
+//Returns:
+//1 → key exists
+//0 → key does NOT exist
 
 
