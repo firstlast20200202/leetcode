@@ -51,7 +51,7 @@ public:
         dp[0] = 1;
         for(int i = 0; i < nums.size(); i++) {
             for(int j = bagsize; j >= nums[i]; j--) {
-                dp[j] += dp[j - nums[i]];
+                dp[j] += dp[j - nums[i]];    //this dp fomula is commonly used when calculating to fullfill the bag how many methods are needed
             } 
         }
         return dp[bagsize];
