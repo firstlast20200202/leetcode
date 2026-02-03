@@ -29,7 +29,7 @@ didnt do 450
 968没做, 474以及之后完全背包理论基础 和后面都没做
 
 dp: make first 8 parts 
-494 474 518 by myself
+74 518 by myself
 
 
 
