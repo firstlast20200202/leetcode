@@ -1,3 +1,15 @@
+//unordered_map::count(key)
+//Returns:
+//1 → key exists
+//0 → key does NOT exist
+//example:
+//unordered_map<int, int> mp;
+//mp[2] = 10;
+//mp[5] = 20;
+//cout << mp.count(2); // 1
+//cout << mp.count(3); // 0
+//解题思路：先把n1存储在umap里 然后遍历n2的时候 把n2[i]和栈口元素比大小 比栈口小的话直接push进去 大的话用while循环来pop栈口元素 每次都要pop 但只有栈口元素在umap中存在的时候才计算res 计算res的方法就是把n2[i]赋值给res 因为n2[i]就是下一个比栈口大的元素
+
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
@@ -67,47 +79,4 @@ public:
         return res;
     }
 };
-
-
-//3rd Feb 2026
-class Solution {
-public:
-    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
-        vector<int> res(nums1.size(), -1);
-        stack<int> st;
-        if(nums1.size() == 0) return res;
-        unordered_map<int, int> umap;
-        for(int i = 0; i < nums1.size(); i++) {
-            umap[nums1[i]] = i;
-        }
-        st.push(0);
-        for(int i = 1; i < nums2.size(); i++) {
-            if(nums2[i] <= nums2[st.top()]) {
-                st.push(i);
-            }
-            else {
-                while(!st.empty() && nums2[i] > nums2[st.top()]) {
-                    if(umap.count(nums2[st.top()])) {
-                        int index = umap[nums2[st.top()]];
-                        res[index] = nums2[i];
-                    }
-                    st.pop();
-                }
-                st.push(i);
-            }
-        }
-        return res;
-    }
-};
-//unordered_map::count(key)
-//Returns:
-//1 → key exists
-//0 → key does NOT exist
-//example:
-//unordered_map<int, int> mp;
-//mp[2] = 10;
-//mp[5] = 20;
-//cout << mp.count(2); // 1
-//cout << mp.count(3); // 0
-//解题思路：先把n1存储在umap里 然后遍历n2的时候 把n2[i]和栈口元素比大小 比栈口小的话直接push进去 大的话用while循环来pop栈口元素 每次都要pop 但只有栈口元素在umap中存在的时候才计算res 计算res的方法就是把n2[i]赋值给res 因为n2[i]就是下一个比栈口大的元素
 
