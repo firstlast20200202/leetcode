@@ -109,4 +109,5 @@ public:
 //mp[5] = 20;
 //cout << mp.count(2); // 1
 //cout << mp.count(3); // 0
+//解题思路：先把n1存储在umap里 然后遍历n2的时候 把n2[i]和栈口元素比大小 比栈口小的话直接push进去 大的话用while循环来pop栈口元素 每次都要pop 但只有栈口元素在umap中存在的时候才计算res 计算res的方法就是把n2[i]赋值给res 因为n2[i]就是下一个比栈口大的元素
 
