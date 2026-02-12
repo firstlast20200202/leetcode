@@ -4,12 +4,12 @@ using namespace std;
 vector<vector<int>> result;
 vector<int> path;
 
-void dfs(const vector<vector<int>>& graph, int x, int n) {
+void dfs(const vector<vector<int>>& graph, int x, int n) {    //x is current node, n is the destination
     if(x == n) {
         result.push_back(path);
         return;
     }
-    for(int i = 1; i <= n; i++) {
+    for(int i = 1; i <= n; i++) {    //traverse all the nodes that connect to x
         if(graph[x][i] == 1) {
             path.push_back(i);
             dfs(graph, i, n);
