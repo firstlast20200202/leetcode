@@ -16,6 +16,7 @@ void dfs(const vector<vector<int>>& graph, int x, int n) {    //x is current nod
             path.pop_back();
         }
     }
+    //there would be a hidden return once for loop finishes, that mean this dfs function finished execution and it goes back to the upper level dfs
 }
 
 int main() {
