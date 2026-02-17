@@ -31,7 +31,7 @@ didnt do 450
 dp: make first 8 parts 
 474 by myself
 
-break down 496
+496 自己写
 
 
 
