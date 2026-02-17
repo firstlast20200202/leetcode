@@ -27,6 +27,7 @@ void bfs(vector<vector<int>>& grid, vector<vector<bool>>& visited, int x, int y)
     }
 }
 
+//在bfs函数里 每调用一次bfs都是在处理一整块连在一起的1 通过把它们都放进que里 再从que里pop出来一个一个处理；同时把visit过的都标记 所以在main函数里再次调用时要限制条件if(!visited[i][j] && grid[i][j] == 1)
 int main() {
     int n, m;
     cin >> n >> m;
