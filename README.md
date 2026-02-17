@@ -26,7 +26,7 @@ didnt do 450
 15th night review:
 17, 55, 45
 
-968没做, 474以及之后完全背包理论基础 和后面都没做
+968没做, 完全背包理论基础和后面都没做
 
 dp: make first 8 parts 
 
