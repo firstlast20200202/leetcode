@@ -30,8 +30,6 @@ didnt do 450
 
 dp: make first 8 parts 
 
-496 自己写
-
 
 
 
