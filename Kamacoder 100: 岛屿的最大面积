@@ -20,7 +20,7 @@ void bfs(vector<vector<int>>& graph, vector<vector<bool>>& visited, int x, int y
             int nextx = curx + dir[i][0];
             int nexty = cury + dir[i][1];
             if(nextx < 0 || nextx >= graph.size() || nexty < 0 || nexty >= graph[0].size()) continue;
-            if(!visited[nextx][nexty] && graph[nextx][nexty] == 1) {
+            if(!visited[nextx][nexty] && graph[nextx][nexty] == 1) {    //判断当前节点的四周节点是不是valid
                 que.push({nextx, nexty});
                 visited[nextx][nexty] = true;
                 count++;
@@ -43,7 +43,7 @@ int main() {
     
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++) {
-            if(!visited[i][j] && graph[i][j] == 1) {
+            if(!visited[i][j] && graph[i][j] == 1) {    //判断当前节点是不是valid 和bfs里边的这一语句不重复 因为那个是判断当前节点的四周节点是不是valid
                 count = 0;
                 bfs(graph, visited, i, j);
                 res = max(res, count);
