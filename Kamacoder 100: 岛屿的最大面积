@@ -9,7 +9,7 @@ int dir[4][2] = {1, 0, 0, 1, -1, 0, 0, -1};
 void bfs(vector<vector<int>>& graph, vector<vector<bool>>& visited, int x, int y) {
     queue<pair<int, int>> que;
     que.push({x, y});
-    visited[x][y] = 1;
+    visited[x][y] = true;
     count++;
     while(!que.empty()) {
         pair<int, int> cur = que.front();
