@@ -1,6 +1,6 @@
 class Solution {
 private:
-    int count;    //每一堆里1的个数
+    int count;    //每一堆里1的个数；que里边处理的都是1，所以每推进que里一个1，就count++一次
     int dir[4][2] = {0, 1, 1, 0, -1, 0, 0, -1}; // 四个方向
     void bfs(vector<vector<int>>& grid, vector<vector<bool>>& visited, int x, int y) {
         queue<int> que;
